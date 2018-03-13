@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>影印、列印、影印輸出、文件列印 - 影印中心</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+//Set default open/close settings
+$('.acc_container').hide(); //Hide/close all containers
+$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+
+//On Click
+$('.acc_trigger').click(function(){
+	if( $(this).next().is(':hidden') ) { //If immediate next container is closed...
+		$('.acc_trigger').removeClass('active').next().slideUp(); //Remove all .acc_trigger classes and slide up the immediate next container
+		$(this).toggleClass('active').next().slideDown(); //Add .acc_trigger class to clicked trigger and slide down the immediate next container
+	}
+	return false; //Prevent the browser jump to the link anchor
+});
+
+});
+</script>
+</head>
+
+<body>
+<center>
+<div id="container">
+<div id="header">
+<div class="service">
+<div class="tieleA">營業項目</div>
+<ul>
+<li>彩色、黑白影印、掃描 </li>
+<li>推甄、備審資料、同人誌製作</li>
+<li>各式文件裝訂<br />
+(精裝、膠裝、膠環鐵環裝訂、騎馬釘）</li>
+<li>各式文件製作<br />
+(企劃書、建議書、合約、簡報、作品集）</li>
+<li>大圖輸出 / 海報輸出 / 合版印刷</li>
+<li>快速印刷、急件快印、專人收送</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<h2 class="acc_trigger"><a href="#">急件或大量</a></h2>
+	<div class="acc_container">
+		<div class="block">
+		<p>請洽陳先生</p>
+        <div class="txtA01">0937-926969</div>
+        <div class="txtA02">0968-801172</div>
+		</div>
+	</div>
+   <!----->
+   <h2 class="acc_trigger"><a href="#">聯絡騏暘</a></h2>
+	<div class="acc_container">
+		<div class="block">
+		<div class="tieleA">騏暘一店</div>
+        <p>TEL 02-2364-3556 &nbsp;&nbsp;&nbsp; FAX 02-2364-3557
+        <br />台北市大安區新生南路三段60巷2之1號
+        </p>
+        <div class="tieleB">營業時間</div>
+        <p style="border-bottom:2px dotted #ccc; margin:0 0 12px; padding:0 0 12px;">
+        周一至周五 &nbsp;&nbsp;&nbsp; 10:00 ~ 21:00
+        <br />周六 &nbsp;&nbsp;&nbsp; 10:00 ~ 14:00
+        </p>
+        <div class="tieleA">騏暘二店</div>
+        <p>TEL 02-2364-1887 &nbsp;&nbsp;&nbsp; FAX 02-2364-1761
+        <br />台北市大安區新生南路三段102號2F
+        </p>
+        <div class="tieleB">營業時間</div>
+        <p>
+        周一至周六 &nbsp;&nbsp;&nbsp; 9:00 ~ 22:00
+        <br />周日 &nbsp;&nbsp;&nbsp; 13:00 ~ 22:00
+        </p>
+		</div>
+	</div>
+   <!----->
+   <h2 class="acc_trigger"><a href="#">騏暘在哪裡</a></h2>
+	<div class="acc_container">
+		<div class="block">
+        <div class="tieleA">騏暘一店</div>
+        <p>台北市大安區新生南路三段60巷2之1號</p>
+        <p style="border-bottom:2px dotted #ccc; margin:0 0 12px; padding:0 0 12px;">
+        <iframe width="280" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E6%96%B0%E7%94%9F%E5%8D%97%E8%B7%AF%E4%B8%89%E6%AE%B560%E5%B7%B72%E4%B9%8B1%E8%99%9F&amp;aq=&amp;sll=24.220103,120.955874&amp;sspn=0.894209,1.234589&amp;brcurrent=3,0x3442a99bd1adbcc7:0xc5ab69bb7491162a,0,0x3442ac6b61dbbd9d:0xc0c243da98cba64b&amp;ie=UTF8&amp;hq=&amp;hnear=106%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E6%96%B0%E7%94%9F%E5%8D%97%E8%B7%AF%E4%B8%89%E6%AE%B560%E5%B7%B72-1%E8%99%9F&amp;t=m&amp;ll=25.02044,121.533422&amp;spn=0.023333,0.023947&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+        </p>
+		<div class="tieleA">騏暘二店</div>
+        <p>台北市大安區新生南路三段102號2F</p>
+        <p>
+       <iframe width="280" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E6%96%B0%E7%94%9F%E5%8D%97%E8%B7%AF%E4%B8%89%E6%AE%B5102%E8%99%9F2F&amp;aq=&amp;sll=25.020004,121.533569&amp;sspn=0.006942,0.009645&amp;brcurrent=3,0x3442a99bd1adbcc7:0xc5ab69bb7491162a,0,0x3442ac6b61dbbd9d:0xc0c243da98cba64b&amp;ie=UTF8&amp;hq=&amp;hnear=106%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E6%96%B0%E7%94%9F%E5%8D%97%E8%B7%AF%E4%B8%89%E6%AE%B5102%E8%99%9F&amp;t=m&amp;ll=25.019973,121.533594&amp;spn=0.023333,0.023947&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+        </p>
+		</div>
+	</div>
+</div>
+</div>
+
+</center>
+<div id="footer">
+<div class="copyright">
+<p>Copyright 2012  All rights reserved.</p>
+</div>
+</div>
+</body>
+</html>
